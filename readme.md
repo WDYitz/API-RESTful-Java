@@ -9,7 +9,7 @@ classDiagram
     -Account account
     -Feature[] features
     -Card card
-    -News[] news 
+    -News[] news
   }
 
   class Account {
@@ -38,4 +38,9 @@ classDiagram
   User --> Feature
   User --> Card
   User --> News
+
+  User "1" *-- "1" Account
+  User "1" *-- "N" Feature
+  User "1" *-- "1" Card
+  User "1" *-- "N News
 ```
